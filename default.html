@@ -1,101 +1,37 @@
-<style>
-	.marquee {
-	width:600px;
-	padding:0.5em 0;
-	overflow:hidden;
-	background-color:#f6f6f6;
-	margin-bottom:10px;
-	position:relative;
-	}
-
-	.marquee p:after {
-	content:"";
-	white-space:nowrap;
-	padding-right:50px;
-	}
-
-	.marquee p {
-	margin:0;
-	padding-left:600px;
-	display:inline-block;
-	white-space:nowrap;
-	   -webkit-animation-name:marquee;
-	   -webkit-animation-timing-function:linear;
-	   -webkit-animation-duration:10s;
-	   -webkit-animation-iteration-count:infinite;
-	   -moz-animation-name:marquee;
-	   -moz-animation-timing-function:linear;
-	   -moz-animation-duration:10s;
-	   -moz-animation-iteration-count:infinite;
-	   -ms-animation-name:marquee;
-	   -ms-animation-timing-function:linear;
-	   -ms-animation-duration:10s;
-	   -ms-animation-iteration-count:infinite;
-	   -o-animation-name:marquee;
-	   -o-animation-timing-function:linear;
-	   -o-animation-duration:10s;
-	   -o-animation-iteration-count:infinite;
-	   animation-name:marquee;
-	   animation-timing-function:linear;
-	   animation-duration:10s;
-	   animation-iteration-count:infinite;
-	}
-	@-webkit-keyframes marquee {
-	 from   { -webkit-transform: translate(0%);}
-	 99%,to { -webkit-transform: translate(-100%);}
-	}
-	@-moz-keyframes marquee {
-	 from   { -moz-transform: translate(0%);}
-	 99%,to { -moz-transform: translate(-100%);}
-	}
-	@-ms-keyframes marquee {
-	 from   { -ms-transform: translate(0%);}
-	 99%,to { -ms-transform: translate(-100%);}
-	}
-	@-o-keyframes marquee {
-	 from   { -o-transform: translate(0%);}
-	 99%,to { -o-transform: translate(-100%);}
-	}
-	@keyframes marquee {
-	 from   { transform: translate(0%);}
-	 99%,to { transform: translate(-100%);}
-	}
- </style>
- <div style="position: relative ; margin: auto ; width: 100% ; max-width: 450px ; height: 200px ; background-color: rgb(16 , 30 , 70) ; background-size: 450px 200px">
-	 <div style="position: relative ; margin: auto ; width: 450px ; height: 200px ; background-image: url(&quot;https://media.discordapp.net/attachments/922298870678052905/927180021385269308/34.png&quot;) ; background-size: 450px 200px ; background-repeat: no-repeat">
-		 <div style="position: relative ; top: 60% ; text-align: center">
-			 <span style="font-size: 1.2em;"><a style="text-decoration: none ; color: white ; font-family: &quot;sans-serif&quot; ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" target="_blank">
-			 <p><span style="font-size: 1.2em;"><span style="font-size: 1.2em;">Happy New Year!</span></span></p></a></span>
-		 </div>
-	 </div>
-	 <div style="position: absolute ; top: 52px ; left: 13px ; text-align: center">
-		 <span style="font-size: 1.2em"><button name="send" style="border: 2px ; border-radius: 30px ; background-color: rgba(0 , 0 , 0 , 0) ; padding: 5px 12px ; color: white ; font-family: &quot;sans-serif&quot; ;font-size: 14px ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" value="/rules"><span style="font-size: 1.2em"><span style="font-size: 1.2em">Rules</span></span></button></span>
-	 </div>
-	 <div style="position: absolute ; top: 85px ; left: 25px ; text-align: center">
-		 <span style="font-size: 1.2em"><a href="https://discord.gg/mkq8vmUqPE" rel="noopener" style="text-decoration: none ; color: white ; font-family: &quot;sans-serif&quot; ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" target="_blank">Discord</a></span>
-	 </div>
-	 <div style="position: absolute ; top: 106.5px ; left: 13px ; text-align: center">
-		 <span style="font-size: 1.2em"><button name="send" style="border: 2px ; border-radius: 30px ; background-color: rgba(0 , 0 , 0 , 0) ; padding: 5px 12px ; color: white ; font-family: &quot;sans-serif&quot; ;font-size: 14px ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" value="/msg Scrappie, .usage"><span style="font-size: 1.2em"><span style="font-size: 1.2em">使用率</span></span></button></span>
-	 </div>
-	 <div style="position: absolute ; top: 140px ; left: 25px ; text-align: center">
-		 <span style="font-size: 1.2em"><a href="https://pokemonshowdownjapan.hateblo.jp/" rel="noopener" style="text-decoration: none ; color: white ; font-family: &quot;sans-serif&quot; ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" target="_blank">公式ブログ</a></span>
-	 </div>
-	 <div style="position: absolute ; top: 168px ; left: 25px ; text-align: center">
-		 <span style="font-size: 1.2em"><a href="https://pokemonshowdown.com/pages/faq-ja" rel="noopener" style="text-decoration: none ; color: white ; font-family: &quot;sans-serif&quot; ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" target="_blank">FAQ</a></span>
-	 </div>
-	 <div style="position: absolute ; top: 120px ; right:10px ; text-align: left">
-		 <span style="font-size: 0.9em"><a rel="noopener" style="text-decoration: none ; color: rgba(20, 120, 255, 1) ; font-family: &quot;sans-serif&quot; ; target=">News:<br>
-		 %NaM200が新しく<br>
-		 Driverになりました!</a></span>
-	 </div><!--<div style="position: absolute ; top: 105px ; right: 25px ; text-align: center">
-		 <span style="font-size: 1.2em"><a href="https://discord.com/channels/449412583015841793/806245133149536297" rel="noopener" style="text-decoration: none ; color: white ; font-family: &quot;sans-serif&quot; ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" target="_blank">Spotlight</a></span>
-	 </div>-->
-	 <div style="position: relative ; top: -96% ; text-align: center">
-		 <span style="font-size: 1.7em"><a href="https://www.smogon.com/forums/threads/om-mashup-megathread.3657159/#post-8299987" rel="noopener" style="text-decoration: none ; color: black ; font-family: &quot;sans-serif&quot; ; font-weight: bold ; text-shadow: -1px 0 white , 0 1px white , 1px 0 white , 0 -1px white" target="_blank">日本語チャットへようこそ!</a></span>
-	 </div>
-	 <div style="position: absolute ; top: 45px ; right: 10px ; text-align: center">
-		 <span style="font-size: 0.85em"><a rel="noopener" style="text-decoration: none ; color: black ; font-family: &quot;sans-serif&quot; &lt;!-- ; font-weight: bold ; ---&gt; text-shadow: -1px 0 white , 0 1px white , 1px 0 white , 0 -1px white" target="_blank">Please do not use translators<br>
-		 or copy/paste materials<br>
-		 from other users and/or websites</a></span>
-	 </div>
- </div>
+<div style="position: relative ; margin: auto ; width: 100% ; max-width: 450px ; height: 200px ; background-color: rgb(16 , 30 , 70) ; background-size: 450px 200px">
+	<div style="position: relative ; margin: auto ; width: 450px ; height: 200px ; background-image: url(&quot;https://cdn.discordapp.com/attachments/922298870678052905/927181349297729586/35.png&quot;) ; background-size: 450px 200px ; background-repeat: no-repeat">
+		<div style="position: relative ; top: 60% ; text-align: center">
+			<span style="font-size: 1.2em;"><a style="text-decoration: none ; color: white ; font-family: &quot;sans-serif&quot; ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" target="_blank">Happy New Year!</a></span>
+		</div>
+	</div>
+	<div style="position: absolute ; top: 48px ; left: 13px ; text-align: center">
+		<button name="send" style="border: 2px ; border-radius: 30px ; background-color: rgba(0 , 0 , 0 , 0) ; padding: 5px 12px ; color: white ; font-family: &quot;sans-serif&quot; ;font-size: 1.45em ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" value="/rules">Rules</button>
+	</div>
+	<div style="position: absolute ; top: 80px ; left: 25px ; text-align: center">
+		<span style="font-size: 1.48em"><a href="https://discord.gg/mkq8vmUqPE" rel="noopener" style="text-decoration: none ; color: white ; font-family: &quot;sans-serif&quot; ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" target="_blank">Discord</a></span>
+	</div>
+	<div style="position: absolute ; top: 106.5px ; left: 13px ; text-align: center">
+		<button name="send" style="border: 2px ; border-radius: 30px ; background-color: rgba(0 , 0 , 0 , 0) ; padding: 5px 12px ; color: white ; font-family: &quot;sans-serif&quot; ;font-size: 1.38em ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" value="/msg Scrappie, .usage">使用率</button>
+	</div>
+	<div style="position: absolute ; top: 140px ; left: 25px ; text-align: center">
+		<span style="font-size: 1.38em"><a href="https://pokemonshowdownjapan.hateblo.jp/" rel="noopener" style="text-decoration: none ; color: white ; font-family: &quot;sans-serif&quot; ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" target="_blank">公式ブログ</a></span>
+	</div>
+	<div style="position: absolute ; top: 168px ; left: 25px ; text-align: center">
+		<span style="font-size: 1.5em"><a href="https://pokemonshowdown.com/pages/faq-ja" rel="noopener" style="text-decoration: none ; color: white ; font-family: &quot;sans-serif&quot; ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" target="_blank">FAQ</a></span>
+	</div><!--<div style="position: absolute ; top: 120px ; right:10px ; text-align: left">
+	<span style="font-size: 0.9em"><a rel="noopener" style="text-decoration: none ; color: rgba(20, 120, 255, 1) ; font-family: &quot;sans-serif&quot; ; target=">News:<br>
+	%NaM200が新しく<br>
+	Driverになりました!</a></span>
+</div>-->
+	<!--<div style="position: absolute ; top: 105px ; right: 25px ; text-align: center">
+	<span style="font-size: 1.2em"><a href="https://discord.com/channels/449412583015841793/806245133149536297" rel="noopener" style="text-decoration: none ; color: white ; font-family: &quot;sans-serif&quot; ; font-weight: bold ; text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black" target="_blank">Spotlight</a></span>
+</div>-->
+	<div style="position: relative ; top: -96% ; text-align: center">
+		<span style="font-size: 1.7em"><a href="https://www.smogon.com/forums/threads/om-mashup-megathread.3657159/#post-8299987" rel="noopener" style="text-decoration: none ; color: black ; font-family: &quot;sans-serif&quot; ; font-weight: bold ; text-shadow: -1px 0 white , 0 1px white , 1px 0 white , 0 -1px white" target="_blank">日本語チャットへようこそ!</a></span>
+	</div>
+	<div style="position: absolute ; top: 45px ; right: 5px ; text-align: center">
+		<span style="font-size: 0.85em"><a rel="noopener" style="text-decoration: none ; color: black ; font-family: &quot;sans-serif&quot; ; font-weight: bold" target="_blank">Please do not use translators<br>
+		or copy/paste materials<br>
+		from other users and/or websites</a></span>
+	</div>
+</div>
